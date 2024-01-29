@@ -85,4 +85,6 @@ public class TableMongo {
                 .projection(fields(include("first_name", "phone_number"), excludeId()))
                 .forEach((Consumer<? super Document>) System.out::println);
     }
+
+
 }
